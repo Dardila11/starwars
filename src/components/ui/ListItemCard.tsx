@@ -12,8 +12,12 @@ export const ListItemCard : FC<ListItemCardProps> = ( {person} ) => {
 
   let navigate = useNavigate()
 
+  const getCharacterId = (url : string) : string => {
+    return url.slice(-2,-1)
+  }
+
   const onClick = () => {
-    navigate(`/character/${person.name}`)
+    navigate(`/character/${getCharacterId(person.url)}`)
   }
 
   
