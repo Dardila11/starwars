@@ -1,11 +1,13 @@
-import './App.css';
-import { Layout } from './components/layouts';
+import { Route, Routes } from "react-router-dom";
+import { PeopleList } from "./features/peopleList";
 
 function App() {
+
   return (
-    <Layout title='People of Star Wars'>
-      <h1>Hello World</h1>
-    </Layout>
+    <Routes >
+      <Route path="/" element={<PeopleList/>}/>
+    </Routes>
+    
   );
 }
 
