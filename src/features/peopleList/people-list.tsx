@@ -1,4 +1,5 @@
 import { Layout } from "../../shared/layouts"
+import { Loading } from "../../shared/ui"
 import { ListItemCard } from "./components/ListItemCard"
 import { usePeople } from "./hooks/usePeople"
 
@@ -8,7 +9,7 @@ export const PeopleList = () => {
 
   return (
     <Layout title='People of Star Wars'>
-      {loading ? <h1 className="text-blue-600">Loading</h1> :
+      {loading ? <Loading/> :
         error !== "" ? <h1 className="text-red-600">Failed to Load Data</h1> :
           people.map(person => (
             <ListItemCard key={person.name} person={person}/>
