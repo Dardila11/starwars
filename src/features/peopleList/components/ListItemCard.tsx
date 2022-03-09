@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { Person } from '../../interfaces'
-import arrowIcon from '../../assets/icons/arrow.svg'
+import { Person } from '../../../interfaces'
+import arrowIcon from '../../../assets/icons/arrow.svg'
 
 interface ListItemCardProps {
   person: Person
@@ -30,7 +30,7 @@ export const ListItemCard : FC<ListItemCardProps> = ( {person} ) => {
         </div>
         <img src={arrowIcon} alt="arrow icon"/>
       </div>
-      <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+      <span className='block w-full h-[0.2px] ml-4 bg-gray-300'></span>
     </>
   )
 }

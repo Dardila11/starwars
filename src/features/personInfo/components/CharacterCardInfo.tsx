@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Person } from "../../interfaces"
+import { Person } from "../../../interfaces"
 
 interface CharacterCardInfoProps {
   character: Person

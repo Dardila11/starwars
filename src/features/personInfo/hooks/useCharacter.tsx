@@ -2,6 +2,11 @@ import { useEffect, useState } from "react"
 import { swApi } from "../../../api"
 import { Person } from "../../../interfaces"
 
+/**
+ * Custom Hook to fetch data of a single star wars character
+ * @param id 
+ * @returns { CharacterInfo, isError, loading }
+ */
 export const useCharacter = (id : string) => {
   const [characterInfo, setCharacterInfo] = useState<Person>()
   const [isError, setIsError] = useState(false)
@@ -24,7 +29,7 @@ export const useCharacter = (id : string) => {
       }
     }
     fetchPeople()
-  }, [])
+  }, [id])
 
   return {characterInfo, isError, loading}
 

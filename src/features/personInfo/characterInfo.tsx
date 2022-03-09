@@ -1,13 +1,12 @@
 import { FC } from "react"
 import { useParams } from "react-router-dom"
-import { Layout } from "../../components/layouts"
-import { CharacterCardInfo } from "../../components/ui"
+import { Layout } from "../../shared/layouts"
+import { CharacterCardInfo } from "./components/CharacterCardInfo"
 import { useCharacter } from './hooks/useCharacter';
 
 
 export const CharacterInfo : FC = () => {
   let { id } = useParams() as {id : string}
-  //if(id === undefined) return <p>404</p>
   
   const { characterInfo, isError, loading } = useCharacter(id)
 
@@ -20,7 +19,7 @@ export const CharacterInfo : FC = () => {
   }
 
   return (
-  <Layout title={`${characterInfo?.name}`}>
+  <Layout title={`${characterInfo?.name}`} back={true}>
     {characterInfo !== undefined ? 
     <CharacterCardInfo character={characterInfo}/> : <p>404</p>}
   </Layout>

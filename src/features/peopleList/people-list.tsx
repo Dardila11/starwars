@@ -1,5 +1,5 @@
-import { Layout } from "../../components/layouts"
-import { ListItemCard } from "../../components/ui"
+import { Layout } from "../../shared/layouts"
+import { ListItemCard } from "./components/ListItemCard"
 import { usePeople } from "./hooks/usePeople"
 
 export const PeopleList = () => {
