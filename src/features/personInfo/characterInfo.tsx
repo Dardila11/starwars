@@ -5,7 +5,6 @@ import { Loading } from "../../shared/ui";
 import { CharacterCardInfo } from "./components/CharacterCardInfo"
 import { useCharacter } from './hooks/useCharacter';
 
-
 export const CharacterInfo: FC = () => {
   let { id } = useParams() as { id: string }
 

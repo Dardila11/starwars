@@ -22,8 +22,9 @@ export const PeopleList = () => {
 
   useEffect(() => {
     const option = {
+      root: null,
       rootMargin: "20px",
-      threshold: 1.0
+      threshold: 0
     }
     const observer = new IntersectionObserver(handleObserver, option)
     if (loader.current) observer.observe(loader.current)
@@ -38,7 +39,7 @@ export const PeopleList = () => {
       {endOfData ? <></> : (
         <>
           {loading && <Loading />}
-          {isError && <h1 className="text-red-600">Failed to Load Data</h1>}
+          {isError && <div className='flex flex-row justify-center'><h1 className="text-red-600 font-semibold">Failed to Load Data</h1></div>}
           <div ref={loader} />
         </>
       )}
