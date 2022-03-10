@@ -44,18 +44,6 @@ export const usePeople = (page: number) => {
           res.data.results[i] = newPerson
 
         }
-        /* res.data.results.forEach(async (person, index) => {
-
-          let newPerson: Person
-          let specieNames = await fetchSpecieByPerson(person)
-          let planet = await fetchPlanetByPerson(person)
-
-          // add speciesNames to a person. create new Object Person
-          newPerson = Object.assign(person,
-            { speciesNameArray: specieNames, homeworldName: planet })
-          // update person
-          res.data.results[index] = newPerson
-        }); */
         setPeople(prev => [...prev, ...res.data.results])
         setLoading(false)
 
