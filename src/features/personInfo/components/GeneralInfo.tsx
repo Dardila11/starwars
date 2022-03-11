@@ -35,13 +35,6 @@ export const GeneralInfo : FC<GeneralInfoProps> = ({character}) => {
       </div>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p className="text-light">Eye Color</p>
-          <p className="font-bold capitalize">{character.eye_color}</p>
-        </div>
-        <SeparatorLine/>
-      </div>
-      <div>
-        <div className="flex flex-row justify-between px-4 py-4">
           <p className="text-light">Birth Year</p>
           <p className="font-bold capitalize">{character.birth_year}</p>
         </div>
