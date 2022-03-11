@@ -1,5 +1,6 @@
 import { FC } from "react"
 import { Person } from "../../../interfaces"
+import { SeparatorLine } from "../../../shared/ui"
 
 interface GeneralInfoProps {
   character: Person
@@ -7,43 +8,44 @@ interface GeneralInfoProps {
 
 export const GeneralInfo : FC<GeneralInfoProps> = ({character}) => {
 
+  const appearance =  ['Eye Color', 'Hair Color', 'Skin Color', 'Birth Year']
   return (
     <div>
       <h2 className="pl-4 mt-8 font-bold">General Information</h2>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p>Eye Color</p>
-          <p className="font-bold">{character.eye_color}</p>
+          <p className="text-light" >Eye Color</p>
+          <p className="font-bold capitalize">{character.eye_color}</p>
         </div>
-        <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+        <SeparatorLine/>
       </div>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p>Hair Color</p>
-          <p className="font-bold">{character.hair_color}</p>
+          <p className="text-light">Hair Color</p>
+          <p className="font-bold capitalize">{character.hair_color}</p>
         </div>
-        <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+        <SeparatorLine/>
       </div>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p>Skin Color</p>
-          <p className="font-bold">{character.skin_color}</p>
+          <p className="text-light">Skin Color</p>
+          <p className="font-bold capitalize">{character.skin_color}</p>
         </div>
-        <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+        <SeparatorLine/>
       </div>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p>Eye Color</p>
-          <p className="font-bold">{character.eye_color}</p>
+          <p className="text-light">Eye Color</p>
+          <p className="font-bold capitalize">{character.eye_color}</p>
         </div>
-        <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+        <SeparatorLine/>
       </div>
       <div>
         <div className="flex flex-row justify-between px-4 py-4">
-          <p>Birth Year</p>
-          <p className="font-bold">{character.birth_year}</p>
+          <p className="text-light">Birth Year</p>
+          <p className="font-bold capitalize">{character.birth_year}</p>
         </div>
-        <span className='block w-full h-[0.2px] pl-4 bg-gray-300'></span>
+        <SeparatorLine/>
       </div>
 
     </div>

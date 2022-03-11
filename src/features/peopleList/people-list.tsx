@@ -1,7 +1,7 @@
 import { useCallback, useState, useEffect, useRef } from 'react';
 
 import { Layout } from "../../shared/layouts"
-import { Loading } from "../../shared/ui"
+import { ErrorMessage, Loading } from "../../shared/ui"
 
 import { ListItemCard } from "./components/ListItemCard"
 import { usePeople } from "./hooks/usePeople"
@@ -39,7 +39,7 @@ export const PeopleList = () => {
       {endOfData ? <></> : (
         <>
           {loading && <Loading />}
-          {isError && <div className='flex flex-row justify-center'><h1 className="text-red-600 font-semibold">Failed to Load Data</h1></div>}
+          {isError && <ErrorMessage/>}
           <div ref={loader} />
         </>
       )}

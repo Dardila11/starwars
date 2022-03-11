@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { useParams } from "react-router-dom"
 import { Layout } from "../../shared/layouts"
-import { Loading } from "../../shared/ui";
+import { ErrorMessage, Loading } from "../../shared/ui";
 import { CharacterCardInfo } from "./components/CharacterCardInfo"
 import { useCharacter } from './hooks/useCharacter';
 
@@ -15,11 +15,7 @@ export const CharacterInfo: FC = () => {
   }
 
   if (isError) {
-    return (
-    <div className="flex flex-row justify-center" >
-      <p className="text-red-600 font-bold">Failed to Load Data</p>
-    </div>
-    )
+    return <ErrorMessage/>
   }
 
   return (
