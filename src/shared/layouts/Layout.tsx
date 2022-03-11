@@ -20,7 +20,7 @@ export const Layout: FC<LayoutProps> = ({ children, title, back }) => {
             <h1 className="flex-1 font-bold text-center text-white text-[17px]">{title}</h1>
           </> : <h1 className="font-bold text-white text-[17px]">{title}</h1>}
       </nav>
-      <main className="pt-16 overflow-auto">
+      <main className="pt-16 overflow-auto overflow-x-hidden">
         {children}
       </main>
     </>

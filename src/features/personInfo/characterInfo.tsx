@@ -10,18 +10,12 @@ export const CharacterInfo: FC = () => {
 
   const { characterInfo, isError, loading } = useCharacter(id)
 
-  if (loading) {
-    return <Loading />
-  }
-
-  if (isError) {
-    return <ErrorMessage/>
-  }
-
   return (
-    <Layout title={`${characterInfo?.name}`} back={true}>
+    <Layout title={`${characterInfo?.name === undefined ? '' : characterInfo?.name }`} back={true}>
+      {loading && <Loading/>}
+      {isError && <ErrorMessage/>}
       {characterInfo !== undefined ?
-        <CharacterCardInfo character={characterInfo} /> : <p>404</p>}
+        <CharacterCardInfo character={characterInfo} /> : <></>}
     </Layout>
   )
 }

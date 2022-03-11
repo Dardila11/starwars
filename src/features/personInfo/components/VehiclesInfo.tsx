@@ -5,25 +5,25 @@ interface VehiclesInfoProps {
   vehicles: string[]
 }
 
-export const VehiclesInfo : FC<VehiclesInfoProps> = ({vehicles}) => {
+export const VehiclesInfo : FC<VehiclesInfoProps> = ({ vehicles }) => {
   return (
 
     <>
       <h2 className="pl-4 mt-8 font-bold">Vehicles</h2>
-      {vehicles.length === 0 ? <></> : 
-      <>
-      {vehicles.map((vehicle, index) => (
-        <div key={index}>
-          <div className="flex flex-row justify-between px-4 py-4">
-            <p className="text-light">{vehicle}</p>
-          </div>
-          <SeparatorLine/>
-      </div>
-      
-      ))}
-      
-      </>}
-      
+      {vehicles.length === 0 ? <></> :
+        <>
+          {vehicles.map((vehicle, index) => (
+            <div key={index}>
+              <div className="flex flex-row justify-between px-4 py-4">
+                <p className="text-light">{vehicle}</p>
+              </div>
+              <SeparatorLine/>
+            </div>
+
+          ))}
+
+        </>}
+
     </>
   )
 }
