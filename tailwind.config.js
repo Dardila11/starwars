@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         'error-message': '#EC5757',
         'light': '#828282',
