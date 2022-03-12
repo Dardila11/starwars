@@ -13,9 +13,9 @@ export const VehiclesInfo : FC<VehiclesInfoProps> = ({ vehicles }) => {
       {vehicles.length === 0 ? <></> :
         <>
           {vehicles.map((vehicle, index) => (
-            <div key={index}>
+            <div data-testid={`vehicleName-${index}`} key={index}>
               <div className="flex flex-row justify-between px-4 py-4">
-                <p className="text-light font-bold">{vehicle}</p>
+                <p  className="text-light font-bold">{vehicle}</p>
               </div>
               <SeparatorLine/>
             </div>

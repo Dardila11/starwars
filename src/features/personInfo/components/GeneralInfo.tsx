@@ -7,8 +7,7 @@ interface GeneralInfoProps {
 }
 
 export const GeneralInfo : FC<GeneralInfoProps> = ({character}) => {
-
-  const appearance =  ['Eye Color', 'Hair Color', 'Skin Color', 'Birth Year']
+  
   return (
     <div>
       <h2 className="pl-4 mt-8 font-bold">General Information</h2>
@@ -40,7 +39,6 @@ export const GeneralInfo : FC<GeneralInfoProps> = ({character}) => {
         </div>
         <SeparatorLine/>
       </div>
-
     </div>
   )
 }

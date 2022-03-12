@@ -1,14 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { PeopleList } from './people-list';
 
-/* const MockLayoutBack = ({ hasBack }: { hasBack: boolean }) => {
-  return (
-    <BrowserRouter>
-      <Layout title='Hello World' back={hasBack} />
-    </BrowserRouter>
-  )
-} */
 
 beforeEach(() => {
   // IntersectionObserver isn't available in test environment

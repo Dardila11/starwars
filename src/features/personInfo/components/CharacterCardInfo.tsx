@@ -8,13 +8,9 @@ interface CharacterCardInfoProps {
 }
 
 export const CharacterCardInfo : FC<CharacterCardInfoProps> = ({character}) => {
-
-  console.log(character)
-
   return (
     <div>
       <GeneralInfo character={character}/>
-      {/* Vehicle Info */}
       <VehiclesInfo vehicles={character.vehiclesName}/>
     </div>
   )
