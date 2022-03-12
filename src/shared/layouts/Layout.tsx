@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Link } from "react-router-dom"
-import backArrow from '../../assets/icons/backarrow.svg'
+import backArrow from 'assets/icons/backarrow.svg'
 
 interface LayoutProps {
   title: string
@@ -8,8 +8,6 @@ interface LayoutProps {
 }
 
 export const Layout: FC<LayoutProps> = ({ children, title, back }) => {
-
-
 
   return (
     <>

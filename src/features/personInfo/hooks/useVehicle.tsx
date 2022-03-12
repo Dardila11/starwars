@@ -1,6 +1,4 @@
-import { Vehicle } from "../../../interfaces/sw-vehicles";
 import { useState, useEffect } from 'react';
-import { swApi } from "../../../api";
 import axios from "axios";
 
 export const useVehicles = (vehicleArray: string[]) => {

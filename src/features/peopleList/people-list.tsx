@@ -1,11 +1,10 @@
 import { useCallback, useState, useEffect, useRef } from 'react';
 
-import { Layout } from "../../shared/layouts"
-import { ErrorMessage, Loading } from "../../shared/ui"
-
-import { ListItemCard } from "./components/ListItemCard"
-import { usePeople } from "./hooks/usePeople"
-import { getCharacterId } from '../../utils/utils';
+import { Layout } from 'shared/layouts';
+import { Loading, ErrorMessage } from 'shared/ui';
+import { getCharacterId } from 'utils';
+import { ListItemCard } from './components/ListItemCard';
+import { usePeople } from './hooks/usePeople';
 
 export const PeopleList = () => {
 

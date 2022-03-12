@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { SeparatorLine } from "../../../shared/ui";
-
+import { SeparatorLine } from "shared/ui";
 interface VehiclesInfoProps {
   vehicles: string[]
 }

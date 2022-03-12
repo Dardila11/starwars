@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { PeopleList } from "./features/peopleList";
-import { CharacterInfo } from "./features/personInfo";
 
+import { PeopleList } from "features/peopleList";
+import { CharacterInfo } from "features/personInfo";
 
 function App() {
 

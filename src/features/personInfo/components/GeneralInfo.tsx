@@ -1,6 +1,7 @@
 import { FC } from "react"
-import { Person } from "../../../interfaces"
-import { SeparatorLine } from "../../../shared/ui"
+
+import { Person } from "interfaces"
+import { SeparatorLine } from "shared/ui"
 
 interface GeneralInfoProps {
   character: Person

@@ -1,10 +1,10 @@
 import { FC } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import { Person } from '../../../interfaces'
-import arrowIcon from '../../../assets/icons/arrow.svg'
-import { getCharacterId } from '../../../utils'
-import { SeparatorLine } from '../../../shared/ui';
+import { Person } from 'interfaces';
+import { SeparatorLine } from 'shared/ui';
+import { getCharacterId } from 'utils';
+import arrowIcon from 'assets/icons/arrow.svg'
 
 interface ListItemCardProps {
   character: Person

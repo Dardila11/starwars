@@ -1,9 +1,12 @@
 import { FC } from "react"
 import { useParams } from "react-router-dom"
-import { Layout } from "../../shared/layouts"
-import { ErrorMessage, Loading } from "../../shared/ui";
+
+import { Layout } from "shared/layouts"
+import { Loading, ErrorMessage } from "shared/ui"
 import { CharacterCardInfo } from "./components/CharacterCardInfo"
-import { useCharacter } from './hooks/useCharacter';
+import { useCharacter } from "./hooks/useCharacter"
+
+
 
 export const CharacterInfo: FC = () => {
   let { id } = useParams() as { id: string }

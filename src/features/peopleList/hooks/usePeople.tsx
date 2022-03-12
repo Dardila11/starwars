@@ -1,8 +1,8 @@
 import { useEffect, useState, useCallback } from 'react';
-import { swApi } from "../../../api"
-import { PeopleResponse, Person, Specie, SpeciesResponse, Planet } from "../../../interfaces"
-import { getCharacterId } from '../../../utils';
 
+import { swApi } from 'api';
+import { Person, Specie, Planet, PeopleResponse } from 'interfaces';
+import { getCharacterId } from 'utils';
 
 export const usePeople = (page: number) => {
   const [people, setPeople] = useState<Person[]>([])

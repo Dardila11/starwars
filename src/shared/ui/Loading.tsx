@@ -1,4 +1,4 @@
-import loadingAnimation from '../../assets/icons/activity-indicator.svg'
+import loadingAnimation from 'assets/icons/activity-indicator.svg'
 
 export const Loading = () => {
   return  (

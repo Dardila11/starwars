@@ -1,5 +1,6 @@
 import { FC } from "react"
-import { Person } from "../../../interfaces"
+
+import { Person } from "interfaces"
 import { GeneralInfo } from "./GeneralInfo"
 import { VehiclesInfo } from "./VehiclesInfo"
 
