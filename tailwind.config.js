@@ -8,9 +8,13 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
       },
       colors: {
-        'error-message': '#EC5757',
         'light': '#828282',
         'dark' : '#333333',
+        'emphasis': '#EC5757',
+        'ravn-black': '#121212'
+      },
+      fontSize: {
+        '17': ['17px']
       }
     },
   },
